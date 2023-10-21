@@ -9,12 +9,8 @@ CREATE TABLE user (
 
 CREATE TABLE games (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
+  player_id INTEGER NOT NULL,
   title TEXT NOT NULL,
-  console TEXT NOT NULL
+  console TEXT NOT NULL,
+  FOREIGN KEY (player_id) REFERENCES user (id)
 );
-
-CREATE TABLE playedgames {
-  game_id INTEGER PRIMARY KEY,
-  
-  FOREIGN KEY (game_id) REFERENCES games (id)
-};

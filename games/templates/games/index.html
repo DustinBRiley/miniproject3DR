@@ -11,11 +11,11 @@
   {% for game in games %}
     <article class="post">
       <header>
+        {% if g.user['id'] == game['player_id'] %}
         <div>
           <h1>{{ game['title'] }}</h1>
           <h1>{{ game['console'] }}</h1>
-        </>
-        {% if g.user['id'] == game['player_id'] %}
+        </div>
           <a class="action" href="{{ url_for('games.update', id=game['id']) }}">Edit</a>
         {% endif %}
       </header>

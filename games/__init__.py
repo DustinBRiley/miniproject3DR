@@ -8,10 +8,12 @@ import os
 from flask import Flask
 
 # (5/5 points) Proper import of packages used.
-
+#done
 # (70/70 points) Using Flask you need to setup the following:
 # (10/10 points) Setup a proper folder structure, use the tutorial as an example.
+#done
 # (20/20 points) You need to have a minimum of 5 pages, using a proper template structure.
+#done
 # (10/10 points) You need to have at least one page that utilizes a form and has the proper GET and POST routes setup.
 # (10/10 points) You need to setup a SQLlite database with a minimum of two tables, linked with a foreign key.
 # (10/10) You need to use Bootstrap in your web templates. I won't dictate exactly what modules you need to use but
